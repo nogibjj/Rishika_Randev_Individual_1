@@ -46,18 +46,24 @@ The dataset used in this project is a synthetic, free dataset from Kaggle called
 7. Using yml files, set up a GitHub Actions workflows so that every time changes are pushed to the repository, all of the Makefile commands are run to ensure that new code is properly formatted using Black, linted using Ruff, and tested using Pytest. 
 
   - `make install`
-    <img width="686" alt="Screenshot 2024-09-22 at 10 36 10 PM" src="https://github.com/user-attachments/assets/6f6f2f7e-b94d-4959-8fc1-4573ccb2d64c">
 
-
-  - `make format`
-    <img width="489" alt="Screenshot 2024-09-22 at 10 36 32 PM" src="https://github.com/user-attachments/assets/bd1d3319-3f7d-46b9-86e1-7d6b132f528d">
-
-  - `make lint`
     <img width="839" alt="Screenshot 2024-09-22 at 10 36 51 PM" src="https://github.com/user-attachments/assets/26d74aa2-bae1-48a3-a0ad-716b507b3b41">
 
 
+  - `make format`
+    
+    <img width="343" alt="Screenshot 2024-09-22 at 10 37 04 PM" src="https://github.com/user-attachments/assets/0f65bcb3-0394-4cbd-80b4-be05127cc9b5">
+
+
+
+  - `make lint`
+    
+     <img width="489" alt="Screenshot 2024-09-22 at 10 36 32 PM" src="https://github.com/user-attachments/assets/bd1d3319-3f7d-46b9-86e1-7d6b132f528d">
+
+
   - `make test`
-  <img width="343" alt="Screenshot 2024-09-22 at 10 37 04 PM" src="https://github.com/user-attachments/assets/0f65bcb3-0394-4cbd-80b4-be05127cc9b5">
+    
+    <img width="686" alt="Screenshot 2024-09-22 at 10 36 10 PM" src="https://github.com/user-attachments/assets/6f6f2f7e-b94d-4959-8fc1-4573ccb2d64c">
 
 
 ## ☑️ Summary File
