@@ -32,7 +32,7 @@ def grab_median():
     return data_frame.median(numeric_only=True)
 
 def grab_min():
-    """Returns maximum values of all of the numeric columns of the provided csv file."""
+    """Returns minimum values of all of the numeric columns of the provided csv file."""
     data_frame = load_data()
     return data_frame.min(numeric_only=True)
 
@@ -57,6 +57,4 @@ def generate_sleep_viz():
     plt.title("Hours Slept by Students")
     plt.savefig("sleep_performance.png")
     plt.show()
-
-print(grab_median())
 
