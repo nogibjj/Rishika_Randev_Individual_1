@@ -1,28 +1,28 @@
 """"Main Python script using pandas and matplotlib to read in a csv,
 generate summary stats, and create a data visualization."""
 
-import pandas as pd
-import matplotlib.pyplot as plt
+from lib.library import (
+    generate_summary_stats,
+    grab_median,
+    generate_sleep_viz,
+    generate_study_hours_viz,
+)
 
 
-
-def generate_summary_stats(file_name):
-    """Using the csv file passed in as an argument, this function creates a pandas
-    dataframe from it, and then generates summary statistics (mean, median,
-    mode, standard deviation, as well as percentiles) for each column of the dataframe
-    using the pandas describe method.
+def summarize():
+    """Using the Student Performance csv and summary statistics functions from
+    library.py, this function produces summary statistics (mean, median,
+    mode, standard deviation, percentiles, max, and min) for each column
+    of the dataframe.
     """
-    data_frame = pd.read_csv(file_name)
-    return data_frame.describe(), data_frame.median(numeric_only=True)
+    basic_summary = generate_summary_stats()
+    median = grab_median()
+    return basic_summary, median
 
 
-def generate_viz(file_name):
-    """This function generates a scatter plot visualization of hours studied vs. exam scores
-    from the Student Performance dataset."""
-    data_frame = pd.read_csv(file_name)
-    plt.scatter(data_frame["Hours_Studied"], data_frame["Exam_Score"], color="Green")
-    plt.xlabel("Hours Studied")
-    plt.ylabel("Student Exam Scores")
-    plt.title("Relationship Between Hours Studied and Student Exam Scores")
-    plt.savefig("performance.png")
-    plt.show()
+def create_visualizations():
+    """This function generates scatterplot and histogram visualizations
+    of the csv data using
+    the respective functions from library.py."""
+    generate_study_hours_viz()
+    generate_sleep_viz()

@@ -3,17 +3,22 @@ install:
 	pip install --upgrade pip && pip install -r requirements.txt
 
 format:
-#formats files according to pep8
+#formats files using Black
 	black *.py
 
 lint:
-#checks to make sure Python files are formatted to industry standard
-	pylint --ignore-patterns=test_.*?py *.py
+#checks to make sure Python files are formatted to industry standard using Ruff
+	ruff check *.py lib/*.py
 
 test:
-#tests files
-	python -m pytest -cov=main test_main.py
+#tests Python script & notebook files
+	python -m pytest -vv --nbval -cov=mylib -cov=main test_*.py *.ipynb
+
+container-lint:
+	docker run --rm -i hadolint/hadolint < Dockerfile
+
+refactor: 
+	format lint
 
 all:
-#all of the above
 	install format lint test
