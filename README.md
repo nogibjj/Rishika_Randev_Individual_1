@@ -6,20 +6,21 @@
 
 # Rishika Randev's Pandas Descriptive Script for IDS706 Week 3
 
-## ☑️ Requirements (Mini Project 2 & Individual Project 1):
+## ☑️ Requirements (Individual Project 1):
 1. Jupyter notebook performing descriptive statistics & tested with nbval plugin
 2. Python script for statistics and generating one data visualization
-3. Summary pdf or markdown file
-4. Makefile that installs required packages, formats, lints, and tests
-5. requirements.txt
-6. Python testing scripts
-7. Successful CI/CD badges
+3. Shared code in library file
+4. Summary pdf or markdown file
+5. Makefile that installs required packages, formats with Black, lints with Ruff, and tests notebook, script, and library
+6. requirements.txt
+7. Tests for library and script
+8. Successful CI/CD badges
 
 ## ☑️ The Dataset
 The dataset used in this project is a synthetic, free dataset from Kaggle called [Student Performance Factors](https://www.kaggle.com/datasets/lainguyn123/student-performance-factors?resource=download). It contains various columns that could potentially impact student performance on exams, such as hours studied, hours slept, class attendance, tutoring sessions, and family income. The full list of columns can be viewed at the link above.
 
 ## ☑️ Steps
-1. Prepare the necesary configuration files like the Dockerfile, devcontainer.json, Makefile, requirements.txt, and main.yml for GitHub Actions integration. Ensure that the requirements.txt lists all necessary packages (for example, matplotlib for visualizing and pandas for data manipulation).
+1. Prepare the necesary configuration files like the Dockerfile, devcontainer.json, Makefile, requirements.txt, and main.yml for GitHub Actions integration. Ensure that the requirements.txt lists all necessary packages (for example, matplotlib for visualizing and pandas for data manipulation) and pins to a specific version of those packages.
 2. Create a main.py script with two functions--
    * generate_summary_stats(csv): reads in any csv file passed to it into a pandas dataframe and then generates summary statistics (mean, median, mode, standard deviation) for its columns.
    * generate_data_viz(csv): reads in the csv file, creates a scatterplot of Hours Studied vs. Exam Score using matplotlib, and saves it as a png file (performance.png).
