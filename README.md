@@ -13,8 +13,8 @@
 4. Summary pdf or markdown file
 5. Makefile that installs required packages, formats with Black, lints with Ruff, and tests notebook, script, and library
 6. requirements.txt
-7. Tests for library and script
-8. Successful CI/CD badges
+7. Testing files for library and script
+8. Successful CI/CD badges for each step of the workflow
 
 ## ☑️ The Dataset
 The dataset used in this project is a synthetic, free dataset from Kaggle called [Student Performance Factors](https://www.kaggle.com/datasets/lainguyn123/student-performance-factors?resource=download). It contains various columns that could potentially impact student performance on exams, such as hours studied, hours slept, class attendance, tutoring sessions, and family income. The full list of columns can be viewed at the link above.
