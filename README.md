@@ -40,27 +40,28 @@ The dataset used in this project is a synthetic, free dataset from Kaggle called
 4. Create test_main.py and test_lib.py scripts to test both files.
      
      ![Visualization](performance.png)
-5. Create a [Jupyter Notebook](summary.ipynb) with the same code as the main.py script to easily show the outputs of the descriptive statistics and data visualization.
-6. Using yml files, set up a GitHub Actions workflows so that every time changes are pushed to the repository, all of the Makefile commands are run to ensure that new code is properly formatted using Black, linted using Ruff, and tested using Pytest. 
+     ![Visualization2](sleep_performance.png)
+   
+6. Create a [Jupyter Notebook](summary.ipynb) with the same code as the main.py script to easily show the outputs of the descriptive statistics and data visualization.
+7. Using yml files, set up a GitHub Actions workflows so that every time changes are pushed to the repository, all of the Makefile commands are run to ensure that new code is properly formatted using Black, linted using Ruff, and tested using Pytest. 
 
   - `make install`
-    
-    ![requirements](https://github.com/user-attachments/assets/0a88d102-f326-4961-83ea-ce40d5930178)
+    <img width="686" alt="Screenshot 2024-09-22 at 10 36 10 PM" src="https://github.com/user-attachments/assets/6f6f2f7e-b94d-4959-8fc1-4573ccb2d64c">
+
 
   - `make format`
-    
-    ![formatting](https://github.com/user-attachments/assets/87809dd7-7128-44be-9dfb-0f3528d2afde8)
+    <img width="489" alt="Screenshot 2024-09-22 at 10 36 32 PM" src="https://github.com/user-attachments/assets/bd1d3319-3f7d-46b9-86e1-7d6b132f528d">
 
   - `make lint`
-    
-    ![linting](https://github.com/user-attachments/assets/e186bb79-fe4d-4633-a04b-22f7b8d8bfb1)
+    <img width="839" alt="Screenshot 2024-09-22 at 10 36 51 PM" src="https://github.com/user-attachments/assets/26d74aa2-bae1-48a3-a0ad-716b507b3b41">
+
 
   - `make test`
-  
-    ![testing](https://github.com/user-attachments/assets/888bdf3d-fad7-42b8-9d36-985d7625a718)
+  <img width="343" alt="Screenshot 2024-09-22 at 10 37 04 PM" src="https://github.com/user-attachments/assets/0f65bcb3-0394-4cbd-80b4-be05127cc9b5">
+
 
 ## ☑️ Summary File
-The outputs of the descriptive statistics and visualization showing Hours Studied vs. Exam Scores are captured in this [pdf file](summary.pdf).
+The outputs of the Jupyter notebook (tested with the nbval plugin) are captured in this [pdf file](summary.pdf).
    
 
 
