@@ -69,7 +69,7 @@ The dataset used in this project is a synthetic, free dataset from Kaggle called
     <img width="686" alt="Screenshot 2024-09-22 at 10 36 10 PM" src="https://github.com/user-attachments/assets/6f6f2f7e-b94d-4959-8fc1-4573ccb2d64c">
 
 
-## ☑️ Summary File
+## Summary File
 The outputs of the Jupyter notebook (tested with the nbval plugin) are captured in this [pdf file](summary.pdf).
    
 
